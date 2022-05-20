@@ -20,7 +20,6 @@ Descripción del proyecto
 
 ## Instalación
 
-Setear un archivo .env siguiendo .env.example
 
 ### Setup ambiente de desarrollo con docker-compose
 
@@ -49,7 +48,7 @@ A través de la interfáz gráfica con Swagger, ingresar a http://localhost:8000
 
 Registrar un usuario: http://localhost:8000/swagger/#/api/api_users_sing_up_create
 
-Loguear a un usuario (de aquí obtendremos el JWT): http://localhost:8000/swagger/#/api/api_token_create
+Loguear a un usuario (la password de tods es 12qwaszx) (de aquí obtendremos el JWT): http://localhost:8000/swagger/#/api/api_token_create
 
 Consultar las transacciones por usuario (con su JWT): http://localhost:8000/swagger/#/api/api_transactions_retrieve
 
@@ -62,8 +61,6 @@ Conultar balance de las monedas (con su JWT): http://localhost:8000/swagger/#/ap
 - Si quiere agregar dinero en las wallet, deberá hacerlo por admin
 - Sólo se pueden hacer transferencias de a una moneda
 
-
-4. Listo ✅
 
 ## Test
 
