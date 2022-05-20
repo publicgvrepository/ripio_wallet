@@ -1,0 +1,6 @@
+# Dependencias para desarrollo local
+
+# Incluye dependencias de test
+-r requirements_test.txt
+
+django_extensions==3.1.3

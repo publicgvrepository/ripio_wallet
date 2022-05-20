@@ -1,0 +1,203 @@
+[
+{
+    "model": "users.customuser",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$260000$g8xPW4Ulox4fproAXbHWbf$+qIufyNQiyS+oTOOoT/QcQRuqil9W9D5+eUU4X/ugvk=",
+        "last_login": "2022-05-18T17:47:18.796",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2022-05-18T17:47:11.001",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.customuser",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$260000$QPnQx3Hl1W5fpNEHIP92QW$wKXBPkRmG1rk3WK5+l469umGA2oQbNxXfOOCTiuCOtY=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "usuario_a",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-05-18T17:47:49.021",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.customuser",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$260000$2wE0Z2IgvowZGARXZspKIH$KGv3Of8BK5xClwODB+lRxMs8nS0GAOPUU77UinOesng=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "usuario_b",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-05-18T17:47:57.450",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.customuser",
+    "pk": 7,
+    "fields": {
+        "password": "pbkdf2_sha256$260000$xKvOoTHMQX7q3iYwBUEVyV$mt+hxWHO8lCMo1k7d99bR/CG7m/PK+5hxQhGECZVSkc=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "usuario_c",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-05-19T17:40:44.721",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "transactions.transactions",
+    "pk": 1,
+    "fields": {
+        "user_from": 2,
+        "user_to": 3,
+        "date_transaction": "2022-05-19T16:51:01.206"
+    }
+},
+{
+    "model": "transactions.transactions",
+    "pk": 2,
+    "fields": {
+        "user_from": 2,
+        "user_to": 3,
+        "date_transaction": "2022-05-19T17:11:25.890"
+    }
+},
+{
+    "model": "transactions.currency",
+    "pk": 1,
+    "fields": {
+        "name": "Peso Argentino",
+        "currency": "ARS"
+    }
+},
+{
+    "model": "transactions.currency",
+    "pk": 2,
+    "fields": {
+        "name": "Dolar Americano",
+        "currency": "USD"
+    }
+},
+{
+    "model": "transactions.transactiondetail",
+    "pk": 1,
+    "fields": {
+        "transaction": 1,
+        "currency": 1,
+        "amount": "1.00",
+        "description": "Transferencia de $1"
+    }
+},
+{
+    "model": "transactions.transactiondetail",
+    "pk": 2,
+    "fields": {
+        "transaction": 2,
+        "currency": 1,
+        "amount": "100.00",
+        "description": "Transferencia de $100"
+    }
+},
+{
+    "model": "transactions.userwallet",
+    "pk": 1,
+    "fields": {
+        "owner": 2
+    }
+},
+{
+    "model": "transactions.userwallet",
+    "pk": 2,
+    "fields": {
+        "owner": 3
+    }
+},
+{
+    "model": "transactions.userwallet",
+    "pk": 3,
+    "fields": {
+        "owner": 7
+    }
+},
+{
+    "model": "transactions.walletdetail",
+    "pk": 1,
+    "fields": {
+        "wallet": 1,
+        "currency": 1,
+        "amount": "899.00"
+    }
+},
+{
+    "model": "transactions.walletdetail",
+    "pk": 2,
+    "fields": {
+        "wallet": 2,
+        "currency": 1,
+        "amount": "101.00"
+    }
+},
+{
+    "model": "transactions.walletdetail",
+    "pk": 3,
+    "fields": {
+        "wallet": 3,
+        "currency": 1,
+        "amount": "1000.00"
+    }
+},
+{
+    "model": "transactions.walletdetail",
+    "pk": 4,
+    "fields": {
+        "wallet": 3,
+        "currency": 2,
+        "amount": "0.00"
+    }
+},
+{
+    "model": "transactions.walletdetail",
+    "pk": 5,
+    "fields": {
+        "wallet": 2,
+        "currency": 2,
+        "amount": "100.00"
+    }
+},
+{
+    "model": "transactions.walletdetail",
+    "pk": 6,
+    "fields": {
+        "wallet": 1,
+        "currency": 2,
+        "amount": "400.00"
+    }
+}
+]

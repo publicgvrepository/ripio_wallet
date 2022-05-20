@@ -1,0 +1,17 @@
+# Django and REST
+Django==3.2.6
+djangorestframework==3.12.4
+PyJWT==v1.7.1
+djangorestframework-simplejwt==4.5.0
+
+# gunicorn
+gunicorn==20.1.0
+
+# PostgresSQL python adapter
+psycopg2-binary==2.9.1
+
+# OpenAPI / Swagger
+drf-spectacular==0.17.3
+
+# 3th app
+django-cors-headers==3.7.0

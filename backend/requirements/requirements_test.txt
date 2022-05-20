@@ -1,0 +1,10 @@
+# Dependencias para CI/CD
+
+# Incluye dependencias base
+-r requirements.txt
+
+# python test
+pytest==6.2.4
+pytest-django==4.4.0
+pytest-mock==3.6.1
+freezegun==1.1.0

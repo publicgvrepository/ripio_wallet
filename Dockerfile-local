@@ -1,0 +1,26 @@
+# Use an official Python runtime as a parent image
+FROM python:3.8
+LABEL maintainer="gerardo.d.velazquez@gmail.com"
+
+# Set environment variables
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONUNBUFFERED 1
+
+RUN apt update && apt install -y nano-tiny libssl-dev libldap2-dev libsasl2-dev
+
+# Copy local/test requirements
+COPY backend/requirements /code/requirements
+
+# Upgrade pip
+RUN pip install --upgrade pip
+
+# Install local/test/core dependencies in all requirements
+RUN pip install -r /code/requirements/requirements_local.txt
+
+COPY ./VERSION /code/VERSION
+
+# Copy the current directory contents into the container at /code/
+COPY ./backend /code/
+
+# Set the working directory to /code/
+WORKDIR /code/
